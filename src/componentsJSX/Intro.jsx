@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom'; 
 import '../componentsCss/Intro.css';
 
 const Intro = () => {
@@ -7,10 +7,9 @@ const Intro = () => {
     const [showIntro, setShowIntro] = useState(false);
     const [showSkipButton, setShowSkipButton] = useState(false);
     const [videoSrc, setVideoSrc] = useState('');
-    //   const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     useEffect(() => {
-        console.log(window.screen.availWidth)
         console.log(window.innerWidth)
         const handleResize = () => {
             if (window.innerWidth >= 769) {
@@ -57,9 +56,9 @@ const Intro = () => {
         setShowIntro(true);
     };
 
-    //   const goToHome = () => {
-    //     navigate('/home'); // Navigate to /home
-    //   };
+    const goToHome = () => {
+        navigate('/home'); // Navigate to /home
+    };
 
     return (
         <div id="intro-lomda">
@@ -98,7 +97,7 @@ const Intro = () => {
                         src={`${process.env.PUBLIC_URL}/assets/images/whiteArrow.png`}
                         className="hpArrow-intro"
                         alt="Arrow"
-                    // onClick={goToHome} 
+                        onClick={goToHome}
                     />
                 </div>
             )}
