@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
-import '../componentsCss/Intro.css';
+import '../GeneralComponentsCss/Intro.css';
 
 const Intro = () => {
     const [isVideoEnded, setIsVideoEnded] = useState(false);

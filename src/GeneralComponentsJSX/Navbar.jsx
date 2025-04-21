@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../componentsCss/Navbar.css';
+import '../GeneralComponentsCss/Navbar.css';
 
 function Navbar() {
   const navigate = useNavigate();
@@ -12,10 +12,10 @@ function Navbar() {
         <li onClick={() => navigate('/diagram')}>מבנה הרשות</li>
         <li onClick={() => navigate('/gallery')}>העמ"צ בחירום</li>
         <li onClick={() => navigate('/relations')}>ממשקי מכלולים</li>
-        <li onClick={() => navigate('/goals')}>יעדים לאומיים</li>
-        <li onClick={() => navigate('/terush')}>תרחיש ייחוס</li>
-        <li onClick={() => navigate('/sdp')}>סד"פ להדפסה</li>
-        <li onClick={() => navigate('/contact')}>יצירת קשר</li>
+        <li onClick={() => navigate('/target')}>יעדים לאומיים</li>
+        <li onClick={() => navigate('/scenario')}>תרחיש ייחוס</li>
+        <li>סד"פ להדפסה</li>
+        <li>יצירת קשר</li>
       </ul>
       <div id='dot-line-navbar'> . . . . . . . . . . </div>
     </nav>

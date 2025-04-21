@@ -66,7 +66,7 @@
         color: #50565c;
         text-align: center;
         position: absolute;
-        top: 123vh;
+        top: 130vh;
         right: 50%;
         transform: translateX(50%);
         width: 67vw;
@@ -83,79 +83,6 @@
 
 /* Tablet */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .title {
-        position: absolute;
-        right: 50%;
-        transform: translateX(50%);
-        font-family: 'Karantina';
-        font-size: 8vw;
-        color: #0b5394;
-        width: 100%;
-        top: 21vh;
-        text-align: center;
-    }
-
-    .div-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 4vh 2vw;
-        justify-items: center;
-        align-items: center;
-        width: 80vw;
-        position: absolute;
-        right: 50%;
-        transform: translateX(50%);
-        top: 34vh;
-    }
-
-    .photo-list-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 10vh;
-    }
-
-    .photo-list-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .photo-list-image-homepage {
-        width: 6.5vw;
-    }
-    
-    .photo-list-title-homepage {
-        font-size: 3vh;
-        font-weight: bold;
-        padding: 0;
-        text-align: center;
-        color: #235884;
-        font-family: 'Heebo', sans-serif;
-        width: 15vw;
-        position: relative;
-        top: 20vh;
-    }
-
-    #title-homepage-golas{
-        width: 10vw;
-    }
-
-    
-    #title-homepage-ogen{
-        width: 10vw;
-    }
-    
-    .dot-line {
-        display: none;
-    }
-
-    .mashov-home {
-        display: none;
-    }
 }
 
 /* Desktop */
@@ -235,12 +162,12 @@
         top: 20vh;
     }
 
-    #title-homepage-golas{
+    #title-homepage-target{
         width: 10vw;
     }
 
     
-    #title-homepage-ogen{
+    #title-homepage-Scenario{
         width: 10vw;
     }
     

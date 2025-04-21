@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import '../componentsCss/Header.css';
-import { useNavigate } from 'react-router-dom'; 
+import '../GeneralComponentsCss/Header.css';
+import { useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
-import Menu from './Menu'; // 
+import Menu from './Menu';
 
 function Header() {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ function Header() {
         alt="logo"
         onClick={() => navigate('/home-page')}
       />
-      
+
       {isMobile ? (
         <img
           src={process.env.PUBLIC_URL + '/assets/images/hamburger.png'}
@@ -38,7 +38,7 @@ function Header() {
         <Navbar />
       )}
 
-      {isMenuOpen && <Menu onClose={() => setIsMenuOpen(false)} />} 
+      {isMenuOpen && <Menu onClose={() => setIsMenuOpen(false)} />}
 
       <img
         src={process.env.PUBLIC_URL + '/assets/images/orangeTriangle.png'}
