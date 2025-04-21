@@ -16,7 +16,7 @@
         right: 10px;
     }
 
-    .navbar {
+    .hamburger {
         position: absolute;
         top: 10px;
         left: 10px;
@@ -66,18 +66,13 @@
         right: 10px;
     }
 
-    .navbar {
+    .hamburger {
         display: none;
 
     }
 
     .orangeTriangle {
-        position: fixed;
-        top: 12vh;
-        left: 0;
-        width: 20vw;
-        height: auto;
-        z-index: -1;
+        display: none;
     }
 
     .blueTriangle {

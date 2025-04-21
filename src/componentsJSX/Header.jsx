@@ -1,21 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../componentsCss/Header.css';
+import { useNavigate } from 'react-router-dom'; 
+import Navbar from './Navbar';
+import Menu from './Menu'; // 
 
 function Header() {
+  const navigate = useNavigate();
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <header className="header">
       <img
         src={process.env.PUBLIC_URL + '/assets/images/collegeLogoText.png'}
         className="App-logo"
         alt="logo"
-        // onClick={() => onNavigate('home')} 
+        onClick={() => navigate('/home-page')}
       />
-      <img
-        src={process.env.PUBLIC_URL + '/assets/images/navbar.png'}
-        className="navbar"
-        alt="navbar"
-        // onClick={onMenuClick}
-      />
+      
+      {isMobile ? (
+        <img
+          src={process.env.PUBLIC_URL + '/assets/images/hamburger.png'}
+          className="hamburger"
+          alt="hamburger"
+          onClick={() => setIsMenuOpen(true)}
+        />
+      ) : (
+        <Navbar />
+      )}
+
+      {isMenuOpen && <Menu onClose={() => setIsMenuOpen(false)} />} 
+
       <img
         src={process.env.PUBLIC_URL + '/assets/images/orangeTriangle.png'}
         alt="orangeTriangle"

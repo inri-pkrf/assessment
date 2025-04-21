@@ -4,7 +4,7 @@ import './App.css';
 
 import Intro from './componentsJSX/Intro';
 import Header from './componentsJSX/Header';
-import Home from './componentsJSX/Home';
+import HomePage from './componentsJSX/HomePage';
 // import Diagram from './Diagram';
 // import Menu from './Menu';
 // import Gallery from './Gallery';
@@ -16,10 +16,15 @@ import Home from './componentsJSX/Home';
 function App() {
   return (
     <div className="App">
+      <img
+        src={process.env.PUBLIC_URL + '/assets/images/orangeTriangle.png'}
+        alt="orangeTriangle"
+        className="orangeTriangle-comp"
+      />
       <Header />
       <Routes>
         <Route path="/" element={<Intro />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/home-page" element={<HomePage />} />
       </Routes>
     </div>
   );

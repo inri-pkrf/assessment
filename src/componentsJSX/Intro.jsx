@@ -34,15 +34,15 @@ const Intro = () => {
     useEffect(() => {
         const videoEndTimeout = setTimeout(() => {
             setIsVideoEnded(true);
-        }, 13000); // Duration until the video is considered ended
+        }, 13000); 
 
         const introTextTimeout = setTimeout(() => {
             setShowIntro(true);
-        }, 13050); // Show intro text shortly after video ends
+        }, 13050); 
 
         const skipButtonTimeout = setTimeout(() => {
             setShowSkipButton(true);
-        }, 3500); // Show the skip button after 3.5 seconds
+        }, 3500); 
 
         return () => {
             clearTimeout(videoEndTimeout);
@@ -54,10 +54,6 @@ const Intro = () => {
     const skipVideo = () => {
         setIsVideoEnded(true);
         setShowIntro(true);
-    };
-
-    const goToHome = () => {
-        navigate('/home'); // Navigate to /home
     };
 
     return (
@@ -97,7 +93,7 @@ const Intro = () => {
                         src={`${process.env.PUBLIC_URL}/assets/images/whiteArrow.png`}
                         className="hpArrow-intro"
                         alt="Arrow"
-                        onClick={goToHome}
+                        onClick={() => navigate('/home-page')}
                     />
                 </div>
             )}

@@ -1,11 +1,9 @@
 import React from 'react';
-import '../componentsCss/Home.css';
+import '../componentsCss/HomePage.css';
 
-function Home() {
+function HomePage() {
     return (
-
-        <div className="home">
-
+        <div className="home-page">
 
             <div className="title">
                 עזר דיגיטלי לניהול מצבי חירום ברשות המקומית
@@ -26,7 +24,7 @@ function Home() {
                         <img src={process.env.PUBLIC_URL + '/assets/images/logos-home/diagramIcon.png'} className="photo-list-image-homepage" alt="Gallery" />
                     </div>
                 </div>
-                <div id='line2' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
+                <div id='line2' className='dot-line'>. . . . . . . . . . . . .   . . . . . . . . . . . . . . . . . . . . . . . .  </div>
 
                 <div className="photo-list-item" >
                     <div className="photo-list-content">
@@ -38,14 +36,14 @@ function Home() {
 
                 <div className="photo-list-item" >
                     <div className="photo-list-content">
-                        <div className="photo-list-title-homepage">  יעדים לאומיים </div>
+                        <div className="photo-list-title-homepage" id='title-homepage-golas'>  יעדים לאומיים </div>
                         <img src={process.env.PUBLIC_URL + '/assets/images/logos-home/icon-des.png'} id='icon-des' className="photo-list-image-homepage" alt="Relations" />
                     </div>
                 </div>
                 <div id='line4' className='dot-line'>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  </div>
                 <div className="photo-list-item" >
                     <div className="photo-list-content">
-                        <div className="photo-list-title-homepage"> תרחיש ייחוס מישקי </div>
+                        <div className="photo-list-title-homepage" id='title-homepage-ogen'> תרחיש ייחוס מישקי </div>
                         <img src={process.env.PUBLIC_URL + '/assets/images/logos-home/ogenIcon.png'} className="photo-list-image-homepage" alt="Ogen" />
                     </div>
                 </div>
@@ -63,9 +61,7 @@ function Home() {
 
         </div>
 
-
-
     );
 }
 
-export default Home;
+export default HomePage;

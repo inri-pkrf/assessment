@@ -10,51 +10,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Karantina:wght@300;400;700&display=swap');
 
 
-.header-fixed{
-  position: fixed; 
+.header-fixed {
+  position: fixed;
   z-index: 10000;
 }
 
-.home{
+.home {
   z-index: 100;
 
 }
 
-/* @media screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
   body::before {
-      content: "אנא סובבו את המכשיר למצב אנכי";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: black;
-      color: white;
-      font-size: 24px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      z-index: 20000;
+    content: "אנא סובבו את המכשיר למצב אנכי";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 20000;
   }
-} */
+}
 
 /* חסימת מצב אנכי בטאבלטים (כולל חלק מהאייפדים שלא מזוהים נכון) */
-/* @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
   body::before {
-      content: "אנא סובבו את האייפד למצב אופקי";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: black;
-      color: white;
-      font-size: 24px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      z-index: 9999;
+    content: "אנא סובבו את האייפד למצב אופקי";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
   }
-} */
+}
+
+@media screen and (max-width: 768px) {
+  .orangeTriangle-comp {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .orangeTriangle-comp {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .orangeTriangle-comp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 29vw;
+    height: auto;
+    z-index: -1;
+  }
+}
