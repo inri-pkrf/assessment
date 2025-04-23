@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="navbar-container">
       <ul className="navbar-list">
-      <li onClick={() => navigate('/home-page')}>עמוד הבית</li>
+        <li onClick={() => navigate('/home-page')}>עמוד הבית</li>
         <li onClick={() => navigate('/diagram')}>מבנה הרשות</li>
         <li onClick={() => navigate('/gallery')}>העמ"צ בחירום</li>
         <li onClick={() => navigate('/relations')}>ממשקי מכלולים</li>

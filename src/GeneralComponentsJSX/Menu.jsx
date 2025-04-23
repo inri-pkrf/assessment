@@ -40,7 +40,7 @@ function Menu({ onClose }) {
                 <div className='lineMenu' id='lineMenuLast'></div>
             </ul>
 
-            <div className='mashov-menu'>
+            <div className='mashov-menu'>  
                 <div className='mashovTextMenu'>
                     <br /> יש הערות על הממשק? יש מחמאות? מלאו את השאלון וצרו איתנו קשר
                     <br />

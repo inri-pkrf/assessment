@@ -1,0 +1,463 @@
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .mivne-icon-Diagram {
+        position: absolute;
+        width: 19vw;
+        height: auto;
+        right: 50%;
+        transform: translateX(50%);
+        margin-top: 10vh;
+    }
+
+    .diagram-title {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        font-family: 'Karantina', cursive;
+        font-size: 14vw;
+        color: #595959;
+        width: 90vw;
+        text-align: center;
+        margin-top: 19vh;
+
+    }
+
+    .subtitle-diagram {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
+        font-family: 'Heebo', sans-serif;
+        font-size: 6vw;
+        color: grey;
+        width: 88vw;
+        direction: rtl;
+    }
+
+    #subtitleD1 {
+        margin-top: 37vh;
+    }
+
+    #subtitleD2 {
+        margin-top: 95vh;
+    }
+
+    .setup {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 88vw;
+        margin-top: 59vh;
+        z-index: 3;
+    }
+
+    .hpArrow-diagram {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 17vw;
+        margin-top: 108vh;
+    }
+
+    .all-diagram {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 100vw;
+        margin-top: 301vh;
+    }
+
+    .line {
+        border-left: 2vw solid #595959;
+        position: absolute;
+        height: 180vh;
+        left: 49vw;
+        z-index: 0;
+        top: -176vh;
+    }
+
+    .frame {
+        width: 80vw;
+        height: 9vh;
+        background-color: #053859;
+        border: 1.5vw solid #053859;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        z-index: 2;
+        text-align: center;
+        position: relative;
+        margin-top: -184vh;
+        transform: translateX(70%);
+        right: 50%;
+    }
+
+    .frame-text {
+        font-family: 'Karantina', cursive;
+        font-size: 13vw;
+        margin: 0;
+        color: rgb(255, 255, 255);
+    }
+
+    .black-frame {
+        width: 65vw;
+        height: 7vh;
+        margin-top: 14vh;
+        background-color: #175a85;
+        border: 1.5vw solid #175a85;
+        padding-top: 1vh;
+        padding-bottom: 2vh;
+        z-index: 2;
+        text-align: center;
+        position: relative;
+        transform: translateX(95%);
+        right: 50%;
+        margin-top: 5vh;
+    }
+
+    .blue-frame {
+        position: relative;
+        right: 50%;
+        transform: translateX(109%);
+        width: 60vw;
+        height: 12vh;
+        margin-top: 6vh;
+        bottom: 2vh;
+        padding-top: 1vh;
+        padding-bottom: 2vh;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .blue-box {
+        background-color: #56c3e8;
+        border: 1.5vw solid #56c3e8;
+        color: #ffffff;
+    }
+
+    .colored-box-text {
+        font-family: 'Karantina', cursive;
+        font-size: 11vw;
+        margin: 0;
+        color: #ffffff;
+    }
+
+    .orange-box {
+        position: relative;
+        right: 50%;
+        transform: translateX(144%);
+        width: 35vw;
+        height: 8vh;
+        text-align: center;
+        margin-top: 1vh;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+        background-color: #ff9900;
+        border: 1.5vw solid #ff9900;
+        color: #ffffff;
+    }
+
+    .red-box {
+        position: relative;
+        right: 50%;
+        transform: translateX(285%);
+        width: 35vw;
+        height: 8vh;
+        text-align: center;
+        margin-top: -12.5vh;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+        background-color: #e06666;
+        border: 1.5vw solid #e06666;
+        color: #ffffff;
+    }
+
+    .dotLine {
+        position: relative;
+        right: 50%;
+        transform: translateX(197%);
+        height: 6vh;
+        width: 42vw;
+        background-color: transparent;
+        color: #595959;
+        font-size: 9vmin;
+        top: -120vh;
+    }
+
+    .colored-box-sub {
+        font-size: 2vw;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        position: relative;
+        right: 50%;
+        transform: translateX(111%);
+        background-color: #56c3e8;
+        border: 1.5vw solid #56c3e8;
+        width: 60vw;
+        height: 12vh;
+        padding-top: 0vh;
+        padding-bottom: 2vh;
+        z-index: 2;
+        text-align: center;
+        top: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    .btn-print-diagram {
+        position: absolute;
+        margin-top: 315vh;
+        background-color: transparent;
+        width: 58vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+        left: 16vw;
+    }
+
+    .print-img-diagram {
+        position: relative;
+        top: -0.75vh;
+        left: 25vw;
+        width: 7vw;
+    }
+
+    .text-print-diagram {
+        position: relative;
+        top: -7vh;
+        left: -1vw;
+        font-size: 4vmin;
+        text-decoration: underline;
+        color: #595959;
+        font-weight: bold;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .mivne-icon-Diagram {
+        position: absolute;
+        width: 11vw;
+        height: auto;
+        right: 50%;
+        transform: translateX(50%);
+        margin-top: 12vh;
+    }
+
+    .diagram-title {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        font-family: 'Karantina', cursive;
+        font-size: 8vw;
+        color: #595959;
+        width: 90vw;
+        text-align: center;
+        margin-top: 26vh;
+    }
+
+    .subtitle-diagram {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        text-align: center;
+        font-family: 'Heebo', sans-serif;
+        font-size: 2.5vw;
+        color: grey;
+        width: 55vw;
+        direction: rtl;
+    }
+
+    #subtitleD1 {
+        margin-top: 42vh;
+    }
+
+    #subtitleD2 {
+        margin-top: 110vh;
+    }
+
+    .setup {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 37vw;
+        margin-top: 62vh;
+        z-index: 3;
+    }
+
+    .hpArrow-diagram {
+        display: none;
+    }
+
+    .all-diagram {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 100vw;
+        margin-top: 301vh;
+    }
+
+    .line {
+        border-left: 2vw solid #595959;
+        position: absolute;
+        height: 180vh;
+        left: 49vw;
+        z-index: 0;
+        top: -176vh;
+    }
+
+    .frame {
+        width: 80vw;
+        height: 9vh;
+        background-color: #053859;
+        border: 1.5vw solid #053859;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        z-index: 2;
+        text-align: center;
+        position: relative;
+        margin-top: -184vh;
+        transform: translateX(70%);
+        right: 50%;
+    }
+
+    .frame-text {
+        font-family: 'Karantina', cursive;
+        font-size: 13vw;
+        margin: 0;
+        color: rgb(255, 255, 255);
+    }
+
+    .black-frame {
+        width: 65vw;
+        height: 7vh;
+        margin-top: 14vh;
+        background-color: #175a85;
+        border: 1.5vw solid #175a85;
+        padding-top: 1vh;
+        padding-bottom: 2vh;
+        z-index: 2;
+        text-align: center;
+        position: relative;
+        transform: translateX(95%);
+        right: 50%;
+        margin-top: 5vh;
+    }
+
+    .blue-frame {
+        position: relative;
+        right: 50%;
+        transform: translateX(109%);
+        width: 60vw;
+        height: 12vh;
+        margin-top: 6vh;
+        bottom: 2vh;
+        padding-top: 1vh;
+        padding-bottom: 2vh;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .blue-box {
+        background-color: #56c3e8;
+        border: 1.5vw solid #56c3e8;
+        color: #ffffff;
+    }
+
+    .colored-box-text {
+        font-family: 'Karantina', cursive;
+        font-size: 11vw;
+        margin: 0;
+        color: #ffffff;
+    }
+
+    .orange-box {
+        position: relative;
+        right: 50%;
+        transform: translateX(144%);
+        width: 35vw;
+        height: 8vh;
+        text-align: center;
+        margin-top: 1vh;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+        background-color: #ff9900;
+        border: 1.5vw solid #ff9900;
+        color: #ffffff;
+    }
+
+    .red-box {
+        position: relative;
+        right: 50%;
+        transform: translateX(285%);
+        width: 35vw;
+        height: 8vh;
+        text-align: center;
+        margin-top: -12.5vh;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+        background-color: #e06666;
+        border: 1.5vw solid #e06666;
+        color: #ffffff;
+    }
+
+    .dotLine {
+        position: relative;
+        right: 50%;
+        transform: translateX(197%);
+        height: 6vh;
+        width: 42vw;
+        background-color: transparent;
+        color: #595959;
+        font-size: 9vmin;
+        top: -120vh;
+    }
+
+    .colored-box-sub {
+        font-size: 2vw;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        position: relative;
+        right: 50%;
+        transform: translateX(111%);
+        background-color: #56c3e8;
+        border: 1.5vw solid #56c3e8;
+        width: 60vw;
+        height: 12vh;
+        padding-top: 0vh;
+        padding-bottom: 2vh;
+        z-index: 2;
+        text-align: center;
+        top: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    .btn-print-diagram {
+        position: absolute;
+        margin-top: 315vh;
+        background-color: transparent;
+        width: 58vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+        left: 16vw;
+    }
+
+    .print-img-diagram {
+        position: relative;
+        top: -0.75vh;
+        left: 25vw;
+        width: 7vw;
+    }
+
+    .text-print-diagram {
+        position: relative;
+        top: -7vh;
+        left: -1vw;
+        font-size: 4vmin;
+        text-decoration: underline;
+        color: #595959;
+        font-weight: bold;
+    }
+}
