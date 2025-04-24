@@ -1,7 +1,13 @@
+
 const DiagramData = [
     {
         titlePopUp: 'ראש הרשות',
-        titleDisplay: (
+        titleDisplayMobile: (
+            <>
+                ראש הרשות
+            </>
+        ),
+        titleDisplayDesktop: (
             <>
                 ראש הרשות
             </>
@@ -11,12 +17,17 @@ const DiagramData = [
                 טקסט חסר, יש להשלים מקור.
             </>
         ),
-        classNameDiv: 'frame',
-        classNameTitle: 'frame-text'
+        classNameDiv: 'first-frame',
+        classNameTitle: 'first-frame-text'
     },
     {
         titlePopUp: 'מנכ"ל / רמ"ט',
-        titleDisplay: (
+        titleDisplayMobile: (
+            <>
+                מנכ"ל / רמ"ט
+            </>
+        ),
+        titleDisplayDesktop: (
             <>
                 מנכ"ל / רמ"ט
             </>
@@ -26,14 +37,19 @@ const DiagramData = [
                 טקסט חסר, יש להשלים מקור.
             </>
         ),
-        classNameDiv: 'black-frame',
-        classNameTitle: 'frame-text'
+        classNameDiv: 'second-frame',
+        classNameTitle: 'second-frame-text'
     },
     {
-        titlePopUp: 'אגף חירום וביטחון',
-        titleDisplay: (
+        titlePopUp: 'מכלול מבצעים',
+        titleDisplayMobile: (
             <>
-                <span style={{ fontSize: '10vmin' }}>אגף</span><br /> חירום וביטחון
+                <span style={{ fontSize: '10vmin' }}>מכלול</span><br />  מבצעים
+            </>
+        ),
+        titleDisplayDesktop: (
+            <>
+                <span style={{ fontSize: '5vmin' }}>מכלול</span><br />  מבצעים
             </>
         ),
         content: (
@@ -72,7 +88,12 @@ const DiagramData = [
     },
     {
         titlePopUp: 'יק"לר',
-        titleDisplay: (
+        titleDisplayMobile: (
+            <>
+                יק"לר
+            </>
+        ),
+        titleDisplayDesktop: (
             <>
                 יק"לר
             </>
@@ -86,10 +107,15 @@ const DiagramData = [
         classNameTitle: 'colored-box-text'
     },
     {
-        titlePopUp: 'כוחות ביטחון',
-        titleDisplay: (
+        titlePopUp: 'ארגוני החירום',
+        titleDisplayMobile: (
             <>
-                כוחות ביטחון
+                ארגוני החירום
+            </>
+        ),
+        titleDisplayDesktop: (
+            <>
+                ארגוני החירום
             </>
         ),
         content: (
@@ -103,9 +129,14 @@ const DiagramData = [
     {
 
         titlePopUp: 'מכלול אוכלוסייה',
-        titleDisplay: (
+        titleDisplayMobile: (
             <>
                 <span style={{ fontSize: '8vmin' }}>מכלול</span><br /> אוכלוסייה
+            </>
+        ),
+        titleDisplayDesktop: (
+            <>
+                <span style={{ fontSize: '5vmin' }}>מכלול</span><br /> אוכלוסייה
             </>
         ),
         content: (
@@ -158,9 +189,14 @@ const DiagramData = [
     },
     {
         titlePopUp: 'מכלול החינוך',
-        titleDisplay: (
+        titleDisplayMobile: (
             <>
                 <span style={{ fontSize: '8vmin' }}>מכלול</span><br /> החינוך            </>
+        ),
+        titleDisplayDesktop: (
+            <>
+                <span style={{ fontSize: '5vmin' }}>מכלול</span><br /> החינוך
+            </>
         ),
         content: (
             <>
@@ -195,9 +231,14 @@ const DiagramData = [
     },
     {
         titlePopUp: 'מכלול מידע לציבור',
-        titleDisplay: (
+        titleDisplayMobile: (
             <>
                 <span style={{ fontSize: '8vmin' }}>מכלול</span><br /> מידע לציבור
+            </>
+        ),
+        titleDisplayDesktop: (
+            <>
+                <span style={{ fontSize: '5vmin' }}>מכלול</span><br /> מידע לציבור
             </>
         ),
         content: (
@@ -247,9 +288,13 @@ const DiagramData = [
     },
     {
         titlePopUp: 'מכלול הנדסה ותשתיות',
-        titleDisplay: (
+        titleDisplayMobile: (
             <>
                 <span style={{ fontSize: '8vmin' }}>מכלול</span><br /> הנדסה ותשתיות            </>
+        ),
+        titleDisplayDesktop: (
+            <>
+                <span style={{ fontSize: '5vmin' }}>מכלול</span><br /> הנדסה ותשתיות            </>
         ),
         content: (
             <>
@@ -296,9 +341,14 @@ const DiagramData = [
     },
     {
         titlePopUp: 'מכלול לוגיסטיקה ותפעול',
-        titleDisplay: (
+        titleDisplayMobile: (
             <>
                 <span style={{ fontSize: '8vmin' }}>מכלול</span><br /> לוגיסטיקה ותפעול
+            </>
+        ),
+        titleDisplayDesktop: (
+            <>
+                <span style={{ fontSize: '5vmin' }}>מכלול</span><br /> לוגיסטיקה ותפעול
             </>
         ),
         content: (
@@ -344,12 +394,16 @@ const DiagramData = [
     },
     {
         titlePopUp: 'מכלול משא"ן ומנהל כללי',
-        titleDisplay: (
+        titleDisplayMobile: (
             <>
                 <span style={{ fontSize: '8vmin' }}>מכלול</span><br /> משא"ן ומנהל כללי
             </>
         ),
-
+        titleDisplayDesktop: (
+            <>
+                <span style={{ fontSize: '5vmin' }}>מכלול</span><br /> משא"ן ומנהל כללי
+            </>
+        ),
         content: (
             <>
                 <b>תפקיד המכלול: מתן מענה כללי בהתאם לרמות השירות שנקבעו לחירום בהיבטים: כוח האדם, התיירים, התקשוב.</b>

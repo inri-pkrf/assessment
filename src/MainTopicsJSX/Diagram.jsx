@@ -6,6 +6,13 @@ import DiagramData from '../Data/DiagramData.jsx';
 const Diagram = () => {
   const [selectedRole, setSelectedRole] = useState(null);
   const [isPopUpVisible, setIsPopUpVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleBoxClick = (role) => {
     setSelectedRole(role);
@@ -64,7 +71,9 @@ const Diagram = () => {
             className={role.classNameDiv}
             onClick={() => handleBoxClick(role)}
           >
-            <p className={role.classNameTitle}>{role.titleDisplay}</p>
+            <p className={role.classNameTitle}>
+              {isMobile ? role.titleDisplayMobile : role.titleDisplayDesktop}
+            </p>
           </div>
         ))}
       </div>

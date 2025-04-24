@@ -76,7 +76,7 @@
         top: -176vh;
     }
 
-    .frame {
+    .first-frame {
         width: 80vw;
         height: 9vh;
         background-color: #053859;
@@ -91,14 +91,14 @@
         right: 50%;
     }
 
-    .frame-text {
+    .first-frame-text {
         font-family: 'Karantina', cursive;
         font-size: 13vw;
         margin: 0;
         color: rgb(255, 255, 255);
     }
 
-    .black-frame {
+    .second-frame {
         width: 65vw;
         height: 7vh;
         margin-top: 14vh;
@@ -112,6 +112,13 @@
         transform: translateX(95%);
         right: 50%;
         margin-top: 5vh;
+    }
+
+    .second-frame-text {
+        font-family: 'Karantina', cursive;
+        font-size: 13vw;
+        margin: 0;
+        color: rgb(255, 255, 255);
     }
 
     .blue-frame {
@@ -207,27 +214,27 @@
         position: absolute;
         margin-top: 315vh;
         background-color: transparent;
-        width: 58vw;
-        height: 5vh;
-        margin-bottom: 2vh;
-        left: 16vw;
+        width: 100vw;
+        height: 7vh;    
+        background-color: rgb(151, 151, 151);
     }
 
     .print-img-diagram {
         position: relative;
-        top: -0.75vh;
-        left: 25vw;
+        top: 1.25vh;
+        left: 21vw;
         width: 7vw;
     }
 
     .text-print-diagram {
         position: relative;
-        top: -7vh;
-        left: -1vw;
+        top: -5vh;
+        left: -3vw;
         font-size: 4vmin;
         text-decoration: underline;
-        color: #595959;
+        color: #ffffff;
         font-weight: bold;
+        font-family: 'Heebo', sans-serif;
     }
 }
 
@@ -236,6 +243,13 @@
 
 /* Desktop */
 @media screen and (min-width: 1025px) {
+
+    .diagram-container {
+        overflow-x: hidden; /* מסתיר גלילה אופקית */
+        overflow-y: auto;   /* מאפשר גלילה אנכית */
+        scroll-behavior: smooth; /* אם רצית גלילה חלקה */
+      }
+
     .mivne-icon-Diagram {
         position: absolute;
         width: 11vw;
@@ -251,38 +265,39 @@
         transform: translateX(50%);
         font-family: 'Karantina', cursive;
         font-size: 8vw;
-        color: #595959;
+        color: black;
         width: 90vw;
         text-align: center;
         margin-top: 26vh;
     }
 
+    #subtitleD1 {
+        top: 45vh;
+        left: 48vw;
+    }
+
     .subtitle-diagram {
         position: absolute;
-        right: 50%;
-        transform: translateX(50%);
+        /* right: 50%; */
+        /* transform: translateX(50%); */
         text-align: center;
         font-family: 'Heebo', sans-serif;
         font-size: 2.5vw;
-        color: grey;
-        width: 55vw;
+        color:#185885;
+        width: 40vw;
         direction: rtl;
     }
 
-    #subtitleD1 {
-        margin-top: 42vh;
-    }
-
     #subtitleD2 {
-        margin-top: 110vh;
-    }
+        top: 75vh;
+        left: 48vw; 
+       }
 
     .setup {
         position: absolute;
-        right: 50%;
-        transform: translateX(50%);
+        top: 44vh;
+        left: 9vw;
         width: 37vw;
-        margin-top: 62vh;
         z-index: 3;
     }
 
@@ -293,70 +308,78 @@
     .all-diagram {
         position: absolute;
         right: 50%;
-        transform: translateX(50%);
+        transform: translateX(49%);
         width: 100vw;
-        margin-top: 301vh;
+        top: 282vh;
     }
 
     .line {
-        border-left: 2vw solid #595959;
+        border-left: 1vw solid #595959;
         position: absolute;
-        height: 180vh;
+        height: 211vh;
         left: 49vw;
         z-index: 0;
         top: -176vh;
     }
 
-    .frame {
-        width: 80vw;
-        height: 9vh;
+    .first-frame {
+        width: 30vw;
+        height: 8vh;
         background-color: #053859;
         border: 1.5vw solid #053859;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
         z-index: 2;
-        text-align: center;
         position: relative;
         margin-top: -184vh;
-        transform: translateX(70%);
-        right: 50%;
+        left: 32vw;
     }
 
-    .frame-text {
+    .first-frame-text {
         font-family: 'Karantina', cursive;
-        font-size: 13vw;
+        font-size: 6vw;
         margin: 0;
         color: rgb(255, 255, 255);
+        width: 30vw;
+        height: 13vh;
+        margin-top: -2vh;
     }
 
-    .black-frame {
-        width: 65vw;
-        height: 7vh;
+    .second-frame {
+        width: 20vw;
+        height: 5vh;
         margin-top: 14vh;
         background-color: #175a85;
         border: 1.5vw solid #175a85;
         padding-top: 1vh;
         padding-bottom: 2vh;
+        padding-left: -7vw;
         z-index: 2;
         text-align: center;
         position: relative;
-        transform: translateX(95%);
-        right: 50%;
+        left: 68vh;
         margin-top: 5vh;
+    }
+
+    .second-frame-text {
+        font-family: 'Karantina', cursive;
+        font-size: 5vw;
+        margin: 0;
+        color: rgb(255, 255, 255);
+        width: 30vw;
+        height: 13vh;
+        margin-top: -2vh;
+        margin-left: -5vw;
     }
 
     .blue-frame {
         position: relative;
-        right: 50%;
-        transform: translateX(109%);
-        width: 60vw;
-        height: 12vh;
-        margin-top: 6vh;
+        left: 40vw;
+        width: 17vw;
+        height: 16vh;
+        margin-top: 7vh;
         bottom: 2vh;
-        padding-top: 1vh;
-        padding-bottom: 2vh;
+        padding-top: -16vh;
+        padding-bottom: -4vh;
         z-index: 2;
-        text-align: center;
     }
 
     .blue-box {
@@ -367,21 +390,19 @@
 
     .colored-box-text {
         font-family: 'Karantina', cursive;
-        font-size: 11vw;
+        font-size: 3.7vw;
         margin: 0;
         color: #ffffff;
     }
 
     .orange-box {
         position: relative;
-        right: 50%;
-        transform: translateX(144%);
-        width: 35vw;
-        height: 8vh;
+        left: 24vw;
+        top: 1.5vh;
+        width: 16vw;
+        height: 9vh;
         text-align: center;
         margin-top: 1vh;
-        padding-top: 2vh;
-        padding-bottom: 1vh;
         background-color: #ff9900;
         border: 1.5vw solid #ff9900;
         color: #ffffff;
@@ -389,14 +410,11 @@
 
     .red-box {
         position: relative;
-        right: 50%;
-        transform: translateX(285%);
-        width: 35vw;
-        height: 8vh;
+        left: 58vw;
+        width: 16vw;
+        height: 9vh;
         text-align: center;
         margin-top: -12.5vh;
-        padding-top: 2vh;
-        padding-bottom: 1vh;
         background-color: #e06666;
         border: 1.5vw solid #e06666;
         color: #ffffff;
@@ -404,14 +422,13 @@
 
     .dotLine {
         position: relative;
-        right: 50%;
-        transform: translateX(197%);
+        left: 29.5vw;
         height: 6vh;
         width: 42vw;
         background-color: transparent;
         color: #595959;
         font-size: 9vmin;
-        top: -120vh;
+        top: -118vh;
     }
 
     .colored-box-sub {
@@ -420,44 +437,40 @@
         text-align: center;
         color: white;
         position: relative;
-        right: 50%;
-        transform: translateX(111%);
+        left: 40vw;
         background-color: #56c3e8;
         border: 1.5vw solid #56c3e8;
-        width: 60vw;
-        height: 12vh;
-        padding-top: 0vh;
-        padding-bottom: 2vh;
+        width: 17vw;
+        height: 16vh;
         z-index: 2;
-        text-align: center;
         top: 4vh;
         margin-bottom: 4vh;
     }
 
     .btn-print-diagram {
         position: absolute;
-        margin-top: 315vh;
+        margin-top: 340vh;
         background-color: transparent;
-        width: 58vw;
-        height: 5vh;
-        margin-bottom: 2vh;
-        left: 16vw;
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(151, 151, 151);
+        cursor: pointer;
     }
 
     .print-img-diagram {
         position: relative;
-        top: -0.75vh;
-        left: 25vw;
-        width: 7vw;
+        width: 3vw;
+        bottom: -2vh;
+        left: 4vw;
     }
 
     .text-print-diagram {
         position: relative;
-        top: -7vh;
-        left: -1vw;
+        bottom: 7vh;
+        left: -3.5vw;
         font-size: 4vmin;
         text-decoration: underline;
-        color: #595959;
-        font-weight: bold;
+        color: white;
+        font-family: 'Karantina', cursive;
     }
 }
