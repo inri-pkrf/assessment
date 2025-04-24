@@ -47,7 +47,7 @@ const Diagram = () => {
       </div>
 
       <img
-        src={process.env.PUBLIC_URL + '/assets/images/setup.jpg'}
+        src={process.env.PUBLIC_URL + '/assets/images/setup.png'}
         className="setup"
         alt="setup"
       />

@@ -295,9 +295,9 @@
 
     .setup {
         position: absolute;
-        top: 44vh;
-        left: 9vw;
-        width: 37vw;
+        top: 45vh;
+        left: 7vw;
+        width: 40vw;
         z-index: 3;
     }
 
