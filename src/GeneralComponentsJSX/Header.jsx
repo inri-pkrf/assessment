@@ -35,7 +35,9 @@ function Header() {
           onClick={() => setIsMenuOpen(true)}
         />
       ) : (
-        <Navbar />
+        <div className='div-navbar'>
+          <Navbar />
+        </div>
       )}
 
       {isMenuOpen && <Menu onClose={() => setIsMenuOpen(false)} />}

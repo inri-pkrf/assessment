@@ -1,0 +1,140 @@
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .photo-list {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 16vh;
+    gap: 3vh;
+    padding-top: -2vh;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .photo-list-item-gallery {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2.5vh;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1vh;
+  }
+
+  .photo-list-item:last-child {
+    border-bottom: none;
+  }
+
+  .photo-list-content {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .photo-list-number {
+    margin-left: 9vw;
+    font-size: 5vh;
+  }
+
+  .photo-list-image {
+    width: 18vw;
+    height: auto;
+    margin-left: 16vw;
+  }
+
+  .photo-list-title {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 2.8vh;
+    color: #000000;
+    width: 32vw;
+    font-family: 'Assistant', sans-serif;
+  }
+
+  .moveLeft {
+    position: relative;
+    right: -6%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .photo-list {
+    /* display: flex; */
+    /* position: relative; */
+    /* flex-direction: column; */
+    /* top: 145vh; */
+    /* gap: 0vh; */
+    /* padding-top: -2vh; */
+    /* font-family: 'Assistant', sans-serif; */
+    /* font-weight: bold; */
+    /* padding-left: 10vw;/ */
+    /* padding-right: 10vw; */
+    /* width: 90vw; */
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 145vh;
+
+  }
+
+  .photo-list-item-gallery {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2.5vh;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1vh;
+    height: 20vh;
+    transition: all 0.3s ease; 
+  }
+
+  .photo-list-item-gallery:hover {
+    background-color: #ffdfb694;
+  }
+
+  .photo-list-item:last-child {
+    border-bottom: none;
+  }
+
+  .photo-list-content {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .photo-list-number {
+    margin-left: 78vw;
+    font-size: 7vh;
+    position: relative;
+    bottom: 9vh;
+    font-family: 'Assistant', sans-serif;
+
+  }
+
+  .photo-list-image {
+    width: 7vw;
+    height: auto;
+    margin-left: 16vw;
+    position: relative;
+    bottom: -2vh;
+    right: 70vh;
+  }
+
+  .photo-list-title {
+    flex-grow: 1;
+    text-align: right;
+    font-size: 3.8vh;
+    color: #000000;
+    width: 32vw;
+    font-family: 'Assistant', sans-serif;
+    position: relative;
+    top: 10vh;
+    left: 20vh;
+ }
+
+}

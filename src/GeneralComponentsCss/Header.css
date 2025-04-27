@@ -58,6 +58,14 @@
 
     }
 
+    .div-navbar{
+        position: absolute;
+        top: 0vh;
+        right: 17vw;
+        width: 80vw;
+        height: 12vh;
+    }
+
     .App-logo {
         height: 10vmin;
         cursor: pointer;

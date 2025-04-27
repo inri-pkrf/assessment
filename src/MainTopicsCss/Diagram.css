@@ -278,8 +278,6 @@
 
     .subtitle-diagram {
         position: absolute;
-        /* right: 50%; */
-        /* transform: translateX(50%); */
         text-align: center;
         font-family: 'Heebo', sans-serif;
         font-size: 2.5vw;
@@ -331,6 +329,7 @@
         position: relative;
         margin-top: -184vh;
         left: 32vw;
+        cursor: pointer;
     }
 
     .first-frame-text {
@@ -357,6 +356,7 @@
         right: 50%;
         transform: translateX(49%);
         margin-top: 5vh;
+        cursor: pointer;
     }
 
     .second-frame-text {
@@ -380,6 +380,7 @@
         padding-top: -16vh;
         padding-bottom: -4vh;
         z-index: 2;
+        cursor: pointer;
     }
 
     .blue-box {
@@ -406,6 +407,7 @@
         background-color: #ff9900;
         border: 1.5vw solid #ff9900;
         color: #ffffff;
+        cursor: pointer;
     }
 
     .red-box {
@@ -418,6 +420,7 @@
         background-color: #e06666;
         border: 1.5vw solid #e06666;
         color: #ffffff;
+        cursor: pointer;
     }
 
     .dotLine {
@@ -445,6 +448,7 @@
         z-index: 2;
         top: 4vh;
         margin-bottom: 4vh;
+        cursor: pointer;
     }
 
     .btn-print-diagram {
