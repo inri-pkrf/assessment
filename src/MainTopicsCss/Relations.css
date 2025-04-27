@@ -1,0 +1,199 @@
+.intro-div-Relations{
+    background-color: white;
+    /* position: absolute;
+    display: block; */
+  }
+  
+  .hpArrow-Relations{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 20vw;
+    /* margin-top: 68vh; */
+    bottom: 15vh;
+    animation: bounce2 2s ease infinite;
+  }
+  
+  .photo-mimshak-intro{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 26vw;
+    margin-top: 18vh;
+  }
+  
+  @keyframes bounce2 {
+    0% {
+      bottom: 15vh;
+    }
+  
+    50% {
+      bottom: 12vh;
+    }
+  
+    100% {
+      bottom: 15vh;
+    }
+  }
+  
+  .title-intro-rel{
+    font-family: 'Karantina', cursive;
+    font-size: 16vw;
+    /* margin-bottom: 3vw; */
+    margin-top: 34vh;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    color: rgb(86, 195, 232);
+  }
+  
+  .sub-intro-rel{
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vw;
+    color: grey;
+    text-align: center;
+    margin-top: 49vh;
+    width: 82vw;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    direction: rtl;
+  }
+  
+  
+  .title-page1 {
+    font-family: 'Karantina', cursive;
+    font-size: 14vw;
+    margin-bottom: 3vw;
+    margin-top: 32vh;
+    width: 87%;
+    text-align: center;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    transition: color 0.3s;
+  }
+  
+  .all-steps {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin-bottom: 4vh;
+    display: flex;
+    width: 71vw;
+    justify-content: center;
+    direction: rtl;
+    margin-top: 22vh;
+  }
+  
+  .btn-steps {
+    width: 14vh;
+    height: 4vh;
+    margin-right: 1vw;
+    margin-left: 0vw;
+    padding-top: 1vh;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid rgb(86, 195, 232);
+    position: relative;
+    top: 0vh;
+    right: 8vw;
+  }
+  
+  .photo-mimshak{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 19vw;
+    margin-top: 11vh;
+    /* z-index: 10000; */
+  }
+  
+  .content-page1 {
+    height: 52vh;
+    /* overflow-y: auto; */
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+    margin-top: 40vh;
+  }
+  
+  .text-page1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vmin;
+    color: grey;
+    text-align: center;
+    margin-top: 2vh;
+    width: 90%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    direction: rtl;
+  }
+  
+  .all-opotion {
+    font-family: 'Heebo', sans-serif;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+    color: #595959;
+    margin-top: 12vh;
+  }
+  
+  .array-item {
+    height: 6vh;
+    width: 85vw;
+    background-color: #d9d9d9;
+    margin-top: 2vh;
+    padding-top: 1.5vh;
+    font-size: 5vmin;
+    cursor: pointer; /* Add pointer cursor on hover */
+    margin-bottom: 3vh;
+  }
+  
+  .array-item:active {
+    background-color: #56c3e8; /* Change background color to blue when selected */
+    color: white; /* Change text color to white for better readability */
+  }
+  
+  .sub-text-relations{
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vmin;
+    color: grey;
+    text-align: center;
+    margin-top: 29vh;
+    width: 90%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    direction: rtl;
+  }   
+  
+  #btn-print-relations1 {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: transparent;
+    width: 56vw;
+    height: 5vh;
+  }
+  
+  .relationsPrintDiv {
+    height: 8vh;
+  }
+  
+  

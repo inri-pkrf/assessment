@@ -64,17 +64,6 @@
 /* Desktop */
 @media screen and (min-width: 1025px) {
   .photo-list {
-    /* display: flex; */
-    /* position: relative; */
-    /* flex-direction: column; */
-    /* top: 145vh; */
-    /* gap: 0vh; */
-    /* padding-top: -2vh; */
-    /* font-family: 'Assistant', sans-serif; */
-    /* font-weight: bold; */
-    /* padding-left: 10vw;/ */
-    /* padding-right: 10vw; */
-    /* width: 90vw; */
     position: absolute;
     right: 50%;
     transform: translateX(50%);
