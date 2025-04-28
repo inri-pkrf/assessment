@@ -1,0 +1,93 @@
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .MagnifyPic {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .magnifyPic-content {
+        position: relative;
+        text-align: center;
+    }
+
+    .magnified-image {
+        width: 156vw;
+        transform: rotate(90deg);
+        top: 51vw;
+        right: -28vw;
+        z-index: 3;
+        position: fixed;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 19px;
+        right: 10px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 55px;
+        height: 40px;
+        font-size: 32px;
+        cursor: pointer;
+        outline: none;
+        font-weight: bolder;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .MagnifyPic {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .magnifyPic-content {
+        position: relative;
+        text-align: center;
+    }
+
+    .magnified-image {
+        width: 80vw;
+        top: 5vw;
+        right: 10vw;
+        z-index: 3;
+        position: fixed;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 3vh;
+        right: 3vw;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 55px;
+        height: 40px;
+        font-size: 10vmin;
+        cursor: pointer;
+        outline: none;
+        font-weight: bolder;
+    }
+}

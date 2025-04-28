@@ -45,11 +45,36 @@
     margin-top: 0;
   }
 
+  
+  #sub-galley2 {
+    margin-top: 7vh;
+  }
+
+  
   .table-gallery {
     position: relative;
     width: 93vw;
     top: 1vh;
     left: 0vw;
+  }
+
+  .MagnifyPic-text-table {
+    position: absolute;
+    right: 50%;
+    transform: translateX(45%);
+    top: 61vh;
+    font-family: 'Heebo', sans-serif;
+    font-size: 3.5vw;
+    color: grey;
+    width: 60vw;
+  }
+
+  .glass-table {
+    position: absolute;
+    right: 17vw;
+    top: 60vh;
+    height: auto;
+    width: 7vw;
   }
 
   .hpArrow-gallery {
@@ -216,6 +241,14 @@
     top: 45vh;
   }
 
+  .MagnifyPic-text-table {
+    display: none;
+  }
+
+  .glass-table {
+    display: none;
+  }
+
   .hpArrow-gallery {
     position: absolute;
     right: 50%;
@@ -258,13 +291,13 @@
     border-radius: 15vw;
     font-family: 'Assistant', sans-serif;
     cursor: pointer;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
   }
 
   .arrowDivRight:hover {
-    background-color: #0981a5; 
-    transform: scale(1.05); 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    background-color: #0981a5;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   .arrowDivLeft {
@@ -274,9 +307,9 @@
   }
 
   .arrowDivLeft:hover {
-    background-color:#6b6969; 
+    background-color: #6b6969;
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   .prev-btn-gallery {
@@ -288,7 +321,7 @@
     font-size: 5vmin;
     margin-top: 3vh;
     cursor: pointer;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
   }
 
   .prev-btn-gallery:hover {

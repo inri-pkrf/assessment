@@ -51,6 +51,25 @@
         z-index: 3;
     }
 
+    .MagnifyPic-text-diagram {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        top: 88vh;
+        font-family: 'Heebo', sans-serif;
+        font-size: 3.5vw;
+        color: grey;
+        width: 60vw;
+    }
+    
+    .glass-diagram {
+        position: absolute;
+        right: 17vw;
+        top: 87vh;
+        height: auto;
+        width: 7vw;
+    }
+    
     .hpArrow-diagram {
         position: absolute;
         right: 50%;
@@ -297,6 +316,24 @@
         left: 7vw;
         width: 40vw;
         z-index: 3;
+    }
+
+    .MagnifyPic-text-diagram {
+        position: absolute;
+        left: -8vh;
+        top: 87vh;
+        font-family: 'Heebo', sans-serif;
+        font-size: 1.5vw;
+        color: grey;
+        width: 60vw;
+    }
+    
+    .glass-diagram {
+        position: absolute;
+        right: 59vw;
+        top: 86vh;
+        height: auto;
+        width: 2.5vw;
     }
 
     .hpArrow-diagram {

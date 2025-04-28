@@ -1,11 +1,20 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import GalleryData from '../../Data/GalleryData';
 import PhotoList from './PhotoList.jsx';
 import CardDetails from './CardDetails.jsx';
 import '../../MainTopicsCss/Gallery.css';
 
 const Gallery = () => {
+    const navigate = useNavigate();
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const handlePhotoClick = (index) => {
         setSelectedCardIndex(index);
@@ -38,6 +47,13 @@ const Gallery = () => {
         window.scrollTo(0, 0);
     };
 
+    const handleImageClickGallery = () => {
+        if (isMobile) {
+            const fullImagePath = `${process.env.PUBLIC_URL}/assets/images/table.jpg`;
+            navigate('/MagnifyPic', { state: { imagePath: fullImagePath } });
+        }
+    };
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -53,7 +69,13 @@ const Gallery = () => {
                     <p className="gallery-subtitle" id='sub-galley1'>
                         לפניך סדר הדוברים לביצוע הערכת מצב בשעת חירום
                     </p>
-                    <img src={process.env.PUBLIC_URL + '/assets/images/table.jpg'} className="table-gallery" alt="table" />
+                    <img src={process.env.PUBLIC_URL + '/assets/images/table.jpg'} className="table-gallery" alt="table" onClick={handleImageClickGallery} />
+                    <div className='MagnifyPic-text-table'>אפשר להגדיל את הסדר דוברים בלחיצה</div>
+                    <img
+                        src={`${process.env.PUBLIC_URL}/assets/images/glass.png`}
+                        className="glass-table"
+                        alt="glass-table"
+                    />
 
                     <p className="gallery-subtitle" id='sub-galley2'>
                         <b>יש להקפיד על סדר הדוברים, להתמקד בהצפת פערים והמלצות חיוניות לאפקטיביות הערכת המצב</b>
