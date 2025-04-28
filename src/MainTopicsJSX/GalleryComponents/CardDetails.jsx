@@ -1,5 +1,5 @@
 import React from 'react';
-import '../MainTopicsCss/CardDetails.css';
+import '../../MainTopicsCss/CardDetails.css';
 
 function CardDetails({ card }) {
   return (

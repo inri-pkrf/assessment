@@ -1,19 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import '../MainTopicsCss/Relations.css';
+import '../../MainTopicsCss/Relations.css';
 import RelationsResult from './RelationsResult';
 
 function Relations() {
-  const [title, setTitle] = useState('בחירת מכלול');
-  const [titleColor, setTitleColor] = useState('#50565c');
-  const [text, setText] = useState('יש לבחור את המכלול הראשי');
-  const [selectedItemStep1, setSelectedItemStep1] = useState(null);
-  const [selectedItemsStep2, setSelectedItemsStep2] = useState(null);
-  const [step, setStep] = useState(1);
-  const [step1Color, setStep1Color] = useState('rgb(86 195 232)');
-  const [step2Color, setStep2Color] = useState('rgb(217 217 217)'); 
-  const [step3Color, setStep3Color] = useState('rgb(217 217 217)'); 
-  const [newComponent, setNewComponent] = useState(false);
-  const [introVisible, setIntroVisible] = useState(true); 
 
   const initialArray = [
     'שליטה ודיווח',
@@ -26,8 +15,18 @@ function Relations() {
     'יקל"ר'
   ];
 
+  const [title, setTitle] = useState('בחירת מכלול');
+  const [titleColor, setTitleColor] = useState('#50565c');
+  const [text, setText] = useState('יש לבחור את המכלול הראשי');
+  const [selectedItemStep1, setSelectedItemStep1] = useState(null);
+  const [selectedItemsStep2, setSelectedItemsStep2] = useState(null);
+  const [step, setStep] = useState(1);
+  const [step1Color, setStep1Color] = useState('rgb(86 195 232)');
+  const [step2Color, setStep2Color] = useState('rgb(217 217 217)');
+  const [step3Color, setStep3Color] = useState('rgb(217 217 217)');
+  const [newComponent, setNewComponent] = useState(false);
+  const [introVisible, setIntroVisible] = useState(true);
   const [arrayOfMechlol, setArrayOfMechlol] = useState(initialArray);
-
   const introRef = useRef(null);
   const contentRef = useRef(null);
 
@@ -60,7 +59,7 @@ function Relations() {
         setTitleColor('#50565c');
         setText('יש לבחור את המכלול הראשי');
         setArrayOfMechlol(initialArray);
-        setStep1Color('rgb(86 195 232)');
+        setStep1Color('rgb(86 195 232)'); 
         setStep2Color('rgb(217 217 217)'); 
         setStep3Color('rgb(217 217 217)'); 
         setNewComponent(false); 
@@ -69,7 +68,7 @@ function Relations() {
         setStep2Color('rgb(86 195 232)'); 
         setStep3Color('rgb(217 217 217)');
         setNewComponent(false); 
-        setText('יש לבחור את המכלול הראשי'); 
+        setText('יש לבחור מכלול נוסף, בכדי לצפות בממשקים שלו כחלק מהעבודה השוטפת');
         if (selectedItemStep1) {
           setTitle(`מכלול ${selectedItemStep1}`);
         } else {
@@ -112,7 +111,7 @@ function Relations() {
   };
 
   const handlePrintRelationsClick = () => {
-    window.open(`${process.env.PUBLIC_URL}/ממשקים בין מכלולים.pdf`, '_blank');
+    window.open(`${process.env.PUBLIC_URL}/assets/pdf/ממשקים בין מכלולים.pdf`, '_blank');
   };
 
   const navigateToStep1 = () => {
@@ -123,8 +122,8 @@ function Relations() {
     setTitleColor('#50565c');
     setText('יש לבחור את המכלול הראשי');
     setArrayOfMechlol(initialArray);
-    setStep1Color('rgb(86 195 232)'); 
-    setStep2Color('rgb(217 217 217)'); 
+    setStep1Color('rgb(86 195 232)');
+    setStep2Color('rgb(217 217 217)');
     setStep3Color('rgb(217 217 217)'); 
     setNewComponent(false); 
   };
@@ -178,7 +177,7 @@ function Relations() {
               <div className='arrow-down' id='arrow-down2' style={{ display: step === 2 ? 'block' : 'none' }}></div>
             </div>
             <div
-              className={`btn-steps ${step < 3 ? 'disabled' : ''}`} 
+              className={`btn-steps ${step < 3 ? 'disabled' : ''}`}
               id='step3'
               style={{ backgroundColor: step3Color }}
               onClick={() => step >= 2 && handleStepClick(3)} 
@@ -212,10 +211,8 @@ function Relations() {
             </div>
 
             <div id='btn-print-relations1' onClick={handlePrintRelationsClick} style={{ display: step === 3 ? 'none' : 'block', marginTop: step === 1 ? '99vh' : "89vh" }}>
-              <div className='relationsPrintDiv'>
-                <img src={process.env.PUBLIC_URL + '/assets/images/print.png'} className="print-img-gallery" alt="print"></img>
-                <p className='text-print'>הורדת גרסה להדפסה</p>
-              </div>
+              <img src={process.env.PUBLIC_URL + '/assets/images/print.png'} className="print-img-relations1" alt="print" />
+              <p className='text-print-relations1'>הורדת גרסה להדפסה</p>
             </div>
 
             {newComponent && <RelationsResult

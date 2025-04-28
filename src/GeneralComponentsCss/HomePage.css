@@ -16,7 +16,7 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        margin-top: 49vh;
+        margin-top: 44vh;
         right: 50%;
         width: 80vw;
         transform: translateX(50%);
@@ -42,10 +42,11 @@
     .photo-list-title-homepage {
         flex-grow: 1;
         text-align: right;
-        font-size: 3vh;
+        font-size: 2.9vh;
         color: #50565c;
         font-weight: bolder;
         padding-right: 5%;
+        font-family: 'Heebo', sans-serif;
     }
 
     .photo-list-item:last-child {

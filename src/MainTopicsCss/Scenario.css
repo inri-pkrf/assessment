@@ -1,0 +1,157 @@
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .ogen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33vw;
+    padding: 2vw;
+    padding-bottom: 25vw;
+    color: white;
+    font-family: 'Assistant', sans-serif;
+  }
+
+  .ogenIcon {
+    width: 20vw;
+    position: relative;
+    top: -3vh;
+  }
+
+  .ogen-title1 {
+    font-family: 'Karantina';
+    font-size: 14vw;
+    color: #595959;
+    margin-bottom: 2vw;
+    margin-top: 0;
+  }
+
+  .ogen-subtitle1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 5vw;
+    color: grey;
+    text-align: center;
+    margin-bottom: 5vw;
+    width: 113vw;
+    margin-top: 3vh;
+    width: 80%;
+    direction: rtl;
+  }
+
+  .hpArrow-Ogen {
+    display: block;
+    width: 17vw;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 99vh;
+    margin-bottom: 1vh;
+  }
+
+  .ogen-title2 {
+    font-family: 'Karantina', cursive;
+    font-size: 11vw;
+    color: black;
+    margin-bottom: 2vw;
+    margin-top: 103px;
+  }
+
+  .ogen-subtitle2 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 4vw;
+    color: grey;
+    text-align: center;
+    margin-bottom: 7vw;
+    margin-top: 7px;
+    width: 80%;
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+    width: 100%;
+    margin-top: 17vh;
+    margin-bottom: -9vh;
+  }
+
+  .image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(20% - 2vw);
+    box-sizing: border-box;
+    padding: 2vw;
+  }
+
+  .ogen-image {
+    width: 80%;
+    height: auto;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .image-title {
+    font-family: 'Heebo', sans-serif;
+    font-size: 3vw;
+    color: #505050;
+    text-align: center;
+    margin: 0.5vh 0;
+  }
+
+  .image-text {
+    font-family: 'Heebo', sans-serif;
+    font-size: 7vw;
+    color: grey;
+    text-align: center;
+    margin: 0 0 2vh;
+  }
+
+  .video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+
+  .ogen-video {
+    width: 80%;
+    height: auto;
+    max-width: 80vw;
+  }
+
+  @media (max-width: 850px) {
+    .image-item {
+      width: 48%;
+    }
+
+    .ogen-title {
+      font-size: 13vw;
+      text-align: center;
+    }
+
+    .ogen-subtitle {
+      font-size: 6vw;
+    }
+
+    .image-title {
+      font-size: 6vw;
+    }
+
+    .image-text {
+      font-size: 4vw;
+    }
+  }
+
+  #image-text-10 {
+    position: relative;
+    top: 2vh;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {}

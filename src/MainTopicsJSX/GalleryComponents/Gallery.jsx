@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import GalleryData from '../Data/GalleryData.jsx';
-import PhotoList from '../MainTopicsJSX/PhotoList';
-import CardDetails from '../MainTopicsJSX/CardDetails.jsx';
-import '../MainTopicsCss/Gallery.css';
+import GalleryData from '../../Data/GalleryData';
+import PhotoList from './PhotoList.jsx';
+import CardDetails from './CardDetails.jsx';
+import '../../MainTopicsCss/Gallery.css';
 
 const Gallery = () => {
     const [selectedCardIndex, setSelectedCardIndex] = useState(null);

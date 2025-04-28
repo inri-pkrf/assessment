@@ -1,5 +1,5 @@
 import React from 'react';
-import '../MainTopicsCss/PhotoList.css';
+import '../../MainTopicsCss/PhotoList.css';
 
 const PhotoList = ({ data, onPhotoClick }) => {
   return (

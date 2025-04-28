@@ -7,10 +7,10 @@ import Header from './GeneralComponentsJSX/Header';
 import HomePage from './GeneralComponentsJSX/HomePage';
 
 import Diagram from './MainTopicsJSX/Diagram';
-import Gallery from './MainTopicsJSX/Gallery';
-import Relations from './MainTopicsJSX/Relations';
+import Gallery from './MainTopicsJSX/GalleryComponents/Gallery';
+import Relations from './MainTopicsJSX/RelationsComponents/Relations';
 import Scenario from './MainTopicsJSX/Scenario';
-import Target from './MainTopicsJSX/Target';
+import Target from './MainTopicsJSX/TargetComponents/Target';
 
 function App() {
   return (
