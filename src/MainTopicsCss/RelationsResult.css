@@ -137,4 +137,139 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) {}
 
 /* Desktop */
-@media screen and (min-width: 1025px) {}
+@media screen and (min-width: 1025px) {
+    .sub-Interfaces {
+        font-family: 'Heebo', sans-serif;
+        font-size: 5vmin;
+        color: grey;
+        text-align: center;
+        margin-top: 12vh;
+        width: 90%;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        direction: rtl;
+    }
+
+    .Interfaces-contect {
+        font-family: 'Heebo', sans-serif;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        direction: rtl;
+        margin-top: 19vh;
+        height: 74vh;
+    }
+
+    .title-Interfaces {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 60vw;
+        height: 8vh;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 2vh;
+        font-size: 4.5vmin;
+        margin-top: 5vh;
+        }
+
+    #title1-Interfaces {
+        background-color: #175a85;
+    }
+
+    #title2-Interfaces {
+        background-color: #1cb4e3;
+    }
+
+    .text-Interfaces {
+        width: 54vw;
+        height: 20vh;
+        background-color: #e9e9e9;
+        color: #000000;
+        margin-bottom: 1vh;
+        padding-right: 5vh;
+        margin-top: 9vh;
+        padding-left: 6vh;
+        padding-top: 10vh;
+        font-size: 3vmin;
+    }
+
+    .btn-div-Interfaces {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        display: flex;
+        margin-top: 105vh;
+    }
+
+    .btn-Interfaces {
+        font-family: 'Heebo', sans-serif;
+        margin-right: 2vh;
+        margin-bottom: 4vh;
+        color: white;
+        position: relative;
+        width: 20vw;
+        height: 6vh;
+        padding: 1vh;
+        text-align: center;
+        font-size: 4vmin;
+        font-weight: bold;
+        border-radius: 15vw;
+        cursor: pointer;
+    }
+
+    #next-btn-Interfaces {
+        background-color: #1cb4e3;
+    }
+
+    #prev-btn-Interfaces {
+        background-color: #b7b7b7;
+    }
+
+    .Interfaces-back {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        margin-top: 117vh;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    #stpe1btn-Interfaces {
+        color: #56c3e8;
+        font-size: 4vmin;
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Heebo', sans-serif;
+        margin-bottom: 5vh;
+    }
+
+    #btn-print-relations2 {
+        position: absolute;
+        top: 125vh;
+        background-color: transparent;
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(151, 151, 151);
+        cursor: pointer;
+    }
+
+    .print-img-relations2 {
+        position: relative;
+        width: 3vw;
+        bottom: -2vh;
+        left: 4vw;
+    }
+
+    .text-print-relations2 {
+        position: relative;
+        bottom: 7vh;
+        left: -3.5vw;
+        font-size: 4vmin;
+        text-decoration: underline;
+        color: white;
+        font-family: 'Karantina', cursive;
+    }
+}
