@@ -133,4 +133,134 @@
 
 /* Desktop */
 @media screen and (min-width: 1025px) {
+    .Interfaces-contect-target {
+        font-family: 'Heebo', sans-serif;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        direction: rtl;
+        margin-top: 12vh;
+        height: 34vh;
+    }
+
+    .title-InterfacesTarget {
+        font-family: 'Karantina';
+        color: #595959;
+        font-size: 7vw;
+        margin-top: -18vh;
+        width: 75vw;
+        text-align: center;
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        transition: color 0.3s;
+        font-weight: normal;
+    }
+
+    .suTtitle-Interfaces {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 55vw;
+        height: 8vh;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 1vh;
+        font-size: 5vmin;
+        margin-top: 3vh;
+        font-family: 'Heebo', sans-serif;
+    }
+
+    .text-interfaces-target {
+        width: 49.4vw;
+        height: 30vh;
+        background-color: #e9e9e9;
+        color: #000000;
+        margin-bottom: 1vh;
+        padding-right: 5vh;
+        margin-top: 9vh;
+        padding-left: 5vh;
+        padding-top: 5vh;
+        font-size: 2.5vmin;
+        font-family: 'Heebo', sans-serif;
+        line-height: 4vh;
+    }
+
+    .btn-div-target {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        display: flex;
+        margin-top: 65vh;
+    }
+
+    .btn-Interfaces {
+        font-family: 'Heebo', sans-serif;
+        margin-right: 2vh;
+        margin-bottom: 4vh;
+        color: white;
+        position: relative;
+        width: 20vw;
+        height: 6vh;
+        padding: 1vh;
+        text-align: center;
+        font-size: 4vmin;
+        font-weight: bold;
+        border-radius: 15vw;
+        cursor: pointer;
+    }
+
+    #next-btn-Interfaces {
+        background-color: #595959;
+    }
+
+    #prev-btn-Interfaces {
+        background-color: #b7b7b7;
+    }
+
+    .btnBackToStep1 {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        margin-top: 77vh;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    #stpe1btn {
+        color: #56c3e8;
+        font-size: 4vmin;
+        text-align: center;
+        text-decoration: underline;
+        font-family: 'Heebo', sans-serif;
+        margin-bottom: 5vh;
+    }
+
+    #btn-print-target2 {
+        position: absolute;
+        top: 90vh;
+        background-color: transparent;
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(151, 151, 151);
+        cursor: pointer;
+    }
+
+    .print-img-target2 {
+        position: relative;
+        width: 3vw;
+        bottom: -2vh;
+        left: 4vw;
+    }
+
+    .text-print-target2 {
+        position: relative;
+        bottom: 7vh;
+        left: -3.5vw;
+        font-size: 4vmin;
+        text-decoration: underline;
+        color: white;
+        font-family: 'Karantina', cursive;
+    }
 }

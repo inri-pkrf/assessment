@@ -134,7 +134,7 @@ function Target() {
                         className="photo-target-intro"
                         alt="Relations"
                     />
-                    <div className="title-intro-tar">  יעדים ומאפשרים <br />לאומיים
+                    <div className="title-intro-tar">  יעדים ומאפשרים לאומיים
                     </div>
                     <div className="sub-intro-tar">
                         לפניך מערכת הצלבה בין המכלולים ותוכנית 'עוגן איתן' לרשות המקומית. כאן ניתן ללמוד על תפקיד המכלול במסגרת המאפשרים והיעדים הלאומיים.

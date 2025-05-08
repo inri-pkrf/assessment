@@ -272,7 +272,7 @@
 
   .title-page1 {
     font-family: 'Karantina', cursive;
-    font-size: 9vw;
+    font-size: 8vw;
     margin-bottom: 3vw;
     margin-top: 33vh;
     width: 87%;
@@ -307,6 +307,7 @@
     color: white;
     transition: background-color 0.3s;
     font-weight: bold;
+    cursor: pointer;
   }
 
   .arrow-down {
@@ -318,6 +319,7 @@
     position: relative;
     top: 0.5vh;
     right: 3vw;
+    cursor: pointer;
   }
 
   .photo-mimshak {

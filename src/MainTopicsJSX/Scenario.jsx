@@ -28,7 +28,7 @@ function Scenario() {
       <h1 className="ogen-title1"> תרחיש ייחוס משקי </h1>
       <p className="ogen-subtitle1">
         לפניך סרטון הסבר ופירוט תרחיש ייחוס גנרי להדגמת ההשפעות האפשריות על המשק.
-        <br /><br />
+        <br />
         נדרשת התאמה לכל רשות.
       </p>
       <div className="video-container">
